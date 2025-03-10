@@ -5,10 +5,11 @@
 
 namespace Statistics {
 
-struct Stats {
-  double min{NAN};
-  double max{NAN};
-  double average{NAN};
+struct Stats
+{
+    double min{NAN};
+    double max{NAN};
+    double average{NAN};
 };
 
 [[nodiscard]] Stats ComputeStatistics(std::span<const double> numbers);
